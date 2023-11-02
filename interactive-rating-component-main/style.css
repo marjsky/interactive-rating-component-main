@@ -1,5 +1,21 @@
+:root {
+    --black: hsla(215, 20%, 17%, 1);
+    --dark-blue: hsla(213, 19%, 18%, 1);
+    --light-gray: hsla(216, 12%, 63%, 1);
+    --medium-gray: hsla(217, 12%, 54%, 1);
+    --orange: hsla(25, 97%, 53%, 1);
+    --pure-white: hsla(0, 0%, 100%, 1);
+    --very-dark-blue: hsla(218, 11%, 8%, 1);
+}
+
+html * {
+    font-family: Overpass;
+}
+
+/* Mobile view 375px */
 
 
+/* Desktop view 1440px */
 
 
 
