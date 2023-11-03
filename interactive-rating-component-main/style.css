@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root {
     --black: hsla(215, 20%, 17%, 1);
     --dark-blue: hsla(213, 19%, 18%, 1);
@@ -12,7 +18,71 @@ html * {
     font-family: Overpass;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--very-dark-blue);
+    width: 375px;
+    height: 667px;
+    padding: 154px 24px 153px 24px;
+    margin: 0 auto;
+}
+
 /* Mobile view 375px */
+.container {
+    width: 327px;
+    height: 360px;
+    border-radius: 15px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    flex-shrink: 0;
+    padding: 24px;
+}
+.icon-circle {
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon {
+    width: 20px;
+    height: 20px; 
+}
+.headline {
+    color: var(--pure-white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+}
+.content {
+    color: var(--light-gray);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.submit-rating-btn {
+    background-color: var(--orange);
+    color: var(--pure-white);
+    width: 279px;
+    height: 45px;
+    border-radius: 22.5px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.867px;
+    text-transform: uppercase;
+}
 
 
 /* Desktop view 1440px */
