@@ -14,9 +14,11 @@
     --very-dark-blue: hsla(218, 11%, 8%, 1);
 }
 
-html * {
-    font-family: Overpass;
-}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Sedgwick+Ave+Display&display=swap');
+
+/* html * {
+    
+} */
 
 body {
     display: flex;
@@ -28,10 +30,13 @@ body {
     height: 667px;
     padding: 154px 24px 153px 24px;
     margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
 }
 
 /* Mobile view 375px */
-.container {
+.container, .thank-you {
     width: 327px;
     height: 360px;
     border-radius: 15px;
@@ -67,6 +72,23 @@ body {
     font-weight: 400;
     line-height: 22px;
     margin-top: 10px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    list-style-type: none;
+    padding-top: 24px;
+}
+.btn {
+    color: var(--light-gray);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    
 }
 .submit-rating-btn {
     background-color: var(--orange);
