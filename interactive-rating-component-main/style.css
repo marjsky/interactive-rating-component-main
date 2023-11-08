@@ -96,12 +96,13 @@ body {
     border: none;
     border-radius: 50%;
     background-color: var(--dark-blue);
-    
+    font-size: 14px;
+    font-weight: 700;
 }
 .submit-rating-btn {
     background-color: var(--orange);
     color: var(--pure-white);
-    width: 279px;
+    width: 100%;
     height: 45px;
     border-radius: 22.5px;
     flex-shrink: 0;
@@ -134,7 +135,8 @@ body {
 .thank-you p.grey {
     width: 168px;
     background-color: var(--dark-blue);
-    padding: 15px 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--orange);
     border-radius: 22.5px;
     font-size: 14px;
@@ -153,8 +155,52 @@ body {
     display: none;
 }
 /* Desktop view 1440px */
+@media screen and (min-width: 1440px) {
+  .container, .thank-you {
+    min-width: 412px;
+    height: auto;
+    padding: 32px 39px 32px 32px;
+  }
+  .icon-circle {
+    width: 48px;
+    height: 48px;
+  }
+  .headline {
+    font-size: 28px;
+  }
+  .content {
+    color: var(--light-gray);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 7px;
+  }
+  .btn {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+  }
+  .submit-rating-btn {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .thank-you img {
+    margin-bottom: 32px;
+  }
+  .thank-you p.grey {
+    width: 193px;
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+  .thank-you h2 {
+    font-size: 28px;
+    margin-bottom: 7px;
+  }
+  .thank-you p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
 
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
